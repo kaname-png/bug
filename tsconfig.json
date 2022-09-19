@@ -1,0 +1,21 @@
+{
+  "extends": "@sapphire/ts-config/extra-strict",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+    "preserveConstEnums": true,
+    "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
+    "lib": ["DOM", "ES2021.String"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "paths": {
+      "#functions/*": ["lib/functions/*"],
+      "#services/*": ["lib/services/*"],
+      "#decorators/*": ["lib/decorators/*"],
+      "#lib/*": ["lib/*"]
+    }
+  },
+  "include": ["."]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --enable-source-maps ./dist/index.js",
+    "build": "rimraf ./dist && tsc --project .",
+    "test": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mikro-orm/core": "^5.4.2",
+    "@mikro-orm/mongo-highlighter": "^1.0.0",
+    "@mikro-orm/mongodb": "^5.4.2",
+    "@sapphire/ts-config": "^3.3.4"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  }
+}
